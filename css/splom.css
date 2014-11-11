@@ -1,0 +1,69 @@
+svg {
+  font: 10px sans-serif;
+}
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.axis line {
+  stroke: #ddd;
+  stroke-width: .5px;
+}
+
+.axis path {
+  display: none;
+}
+
+rect.extent {
+  fill: #000;
+  fill-opacity: .125;
+  stroke: #fff;
+}
+
+rect.frame {
+  fill: #fff;
+  fill-opacity: .7;
+  stroke: #aaa;
+}
+
+circle {
+  fill: #ccc;
+  fill-opacity: .8;
+}
+
+.cell text {
+  pointer-events: none;
+}
+
+.setosa {
+  fill: #800;
+}
+
+.versicolor {
+  fill: #080;
+}
+
+.virginica {
+  fill: #008;
+}
+
+.color_0 {
+  fill: #D9488B;
+}
+
+.color_1 {
+  fill: #1BF2DD;
+}
+
+.color_2 {
+  fill: #F2D230;
+}
+
+.color_3 {
+  fill: #05F2C7;
+}
+
+.color_4 {
+  fill: #9A46F2;
+}

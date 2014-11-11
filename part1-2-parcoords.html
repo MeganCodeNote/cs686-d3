@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Part I - Houses - 2 - Parallel Coordinates</title>
+    <!-- LIBRARY -->
     <link rel="stylesheet" type="text/css" href="css/d3.parcoords.css">
     <script src="lib/d3.min.js"></script>
     <script src="lib/sylvester.js"></script>
@@ -10,8 +11,9 @@
     <script src="lib/jquery-1.7.min.js"></script>
     <script src="lib/underscore.math.js"></script>
     <script src="lib/d3.parcoords.js"></script>
-    <style>
-    </style>
+
+    <!-- SCRIPT FOR SHOWING THE CHART -->
+    <script src="js/parcord.js"></script>
 </head>
 <body>
     <div>
@@ -22,47 +24,11 @@
     <div id="house" class="parcoords" style="width:1000px;height:500px"></div>
     <hr>
     <h2 style="text-align:center;">Annotations</h1>
-    <ul style="margin-left:20%;" >
-        <li>uses a d3 library called: parcoords for progressive rendering (data is large)</li>
-        <li>parallel y axis is reorderble</li>
+    <ol style="margin-left:20%;" >
+        <li>uses a d3 library called: <a href="http://syntagmatic.github.io/parallel-coordinates/">parcoords</a> for progressive rendering (data is large)</li> 
+        <li>all 20640 entries of data are shown in the graph</li>
+        <li>parallel y axis are reorderble</li>
         <li>brush function enabled</li>
-    </ul>
-    <script>
-        // linear color scale
-        // interact with this variable from a javascript console
-        var pc_progressive;
-
-        // load csv file and create the chart
-        d3.csv('data/houses.csv', function(data) {
-            var colorgen = d3.scale.category20();
-            var colors = {
-                0: "#CF7EF2",
-                1: "#A5F26D",
-                2: "#BFA27E",
-                3: "#04D9D9",
-                4: "#F2DA91",
-                5: "#D97971"
-            }
-            var color = function(d) { 
-                var colorkey = Math.floor(d['median house value'] / 100000);
-                return colors[colorkey]; 
-            };
-
-            pc_progressive = d3.parcoords()("#house")
-                .data(data)
-                .color(color)
-                .alpha(0.4)
-                .margin({ top: 24, left: 150, bottom: 12, right: 0 })
-                .mode("queue")
-                .render()
-                .brushMode("1D-axes")  // enable brushing
-                .interactive()         // command line mode
-                .reorderable()
-                .rate(150)
-
-            pc_progressive.svg.selectAll("text")
-                .style("font", "10px sans-serif");
-        });
-  </script>
+    </ol>
 </body>
 </html>
