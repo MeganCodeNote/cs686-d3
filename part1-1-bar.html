@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bar Graph</title>
+
+    <!-- STYLE -->    
+    <link rel="stylesheet" type="text/css" href="css/bar.css">
+
+    <!-- LIBRARY -->    
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <div>
+        <a href="index.html">&lt;&lt;&nbsp; BACK</a>
+        <h1 style="text-align:center;">Parallel Coordinates With Progressive Rendering</h1>
+        <p style="text-align:center;">Part I Houses - Question 2, Megan Lee, meganleesf@gmail.com</p>
+    <h2 style="color:pink;text-align:center;">Hover over bars to show tooltip</h2>
+    </div>
+
+    <!-- CHART -->  
+    <div id="body" style="margin-left:15%;"></div>  
+    <script type="text/javascript" src="js/bar.js"></script>
+    <p style="float:right;margin-right:10%;">Latitue</p>
+    <hr>
+
+    <!-- ANNOTATIONS AND FOOTER -->
+    <h2 style="text-align:center;">Annotations</h2>
+    <ol style="margin-left:20%;" >
+        <li>Reference: inspired by <a href="http://bl.ocks.org/Caged/6476579">d3 bar with tooltips</a></li> 
+        <li>All 20640 entries of data are calculated using a customized script <a href="/data/bar.py">bar.py</a></li>
+        <li>x: lattitude, y: average of Median House Value</li>
+        <li>Hover over will trigger tooltip</li>
+    </ol>
+    <p>© 2014 Megan Lee. meganleesf@gmail.com All rights reserved.</p>
+</body>
+</html>

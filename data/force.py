@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# sample.py
+# force.py
 __author__ = "megan_lee"
 
 """ Sample a portion of the data from aaup data and reformat them
@@ -47,7 +47,7 @@ def gen_file(output_path, rlines, max_size, states):
 if __name__ == '__main__':
 
     lines = s.readin_data('aaup.csv')
-    slines = s.sample_lines(lines, 0.4)
+    slines = s.sample_lines(lines, 0.2)
     rlines, states, max_size = reformat_data(lines[0], slines)
     gen_file('force.json', rlines, max_size, states)
      

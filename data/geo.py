@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# sample.py
+# geo.py
 __author__ = "megan_lee"
 
 """ Sample a portion of the data from aaup data and reformat them
