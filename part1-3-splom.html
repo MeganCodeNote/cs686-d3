@@ -3,24 +3,34 @@
 <head>
   <meta charset="UTF-8">
     <title>Scatterplot Matrix</title>
+    <!-- LIBRARY -->
     <link type="text/css" rel="stylesheet" href="css/splom.css"/>
     <script type="text/javascript" src="lib/d3.v2.js"></script>
+
+    <!-- SCRIPT FOR SHOWING THE CHART -->
     <script type="text/javascript" src="js/splom.js"></script>
 </head>
 <body>
+    <!-- HEADER -->
     <div>
         <a href="index.html">&lt;&lt;&nbsp; BACK</a>
         <h1 style="text-align:center;">Scatter Plot Matrix</h1>
         <p style="text-align:center;">Part I Houses - Question 3, Megan Lee, meganleesf@gmail.com</p>
     </div>
     <h2 style="color:red;text-align:center;">Please wait 5 seconds for graph to load...</h2>
+
+    <!-- CHART -->
     <div style="margin-left:10%;" id="chart"></div>
     <hr>
-    <h2 style="text-align:center;">Annotations</h1>
+
+    <!-- ANNOTATIONS AND FOOTER -->
+    <h2 style="text-align:center;">Annotations</h2>
     <ol style="margin-left:20%;" >
         <li>Reference: This Splom is tweaked from the example listed in : <a href="http://static.cybercommons.org/js/d3/examples/splom/">cybercommons.org</a> </li> 
-        <li>Only a selection of data is shown in the graph (use a customized sample.py script to sample data with ratio of 0.042)</li>
-        <li>brush function enabled</li>
+        <li>Only a selection of data is shown in the graph (use a customized sample.py script to sample data with ratio of 0.042, please look into <a href="data/sample.py">/data/sample.py)</a></li>
+        <li>Brush Selection enabled</li>
+        <li>Dots are colored by the latitude (into 5 groups)</li>
     </ol>
+    <p>© 2014 Megan Lee. meganleesf@gmail.com All rights reserved.</p>
 </body>
 </html>

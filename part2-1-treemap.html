@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>TreeMap</title>
+
+    <!-- LIBRARY AND STYLES -->
+    <link type="text/css" rel="stylesheet" href="css/treemap.css"/>
+    <script type="text/javascript" src="lib/d3.js"></script>
+    <script type="text/javascript" src="lib/d3.layout.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <div>
+        <p/>
+        <a href="index.html">&lt;&lt;&nbsp; BACK</a>
+        <h1 style="text-align:center;">Zoomable Treemap</h1>
+        <p style="text-align:center;">Part II US Colleges - 1, Megan Lee, meganleesf@gmail.com</p>
+    </div>
+    <h2 style="color:pink;text-align:center;">Click on area to zoom</h2>
+
+    <!-- CHART -->
+    <div id="body"></div>
+    <script type="text/javascript" src="js/treemap.js"></script>
+
+    <!-- ANNOTATIONS AND FOOTER -->
+    <hr>
+    <h2 style="text-align:center;">Annotations</h2>
+    <ol style="margin-left:20%;" >
+        <li>Reference: This zoomable treemap uses the code shown at: <a href="http://mbostock.github.io/d3/talk/20111018/treemap.html">mbostock.github.io</a> </li> 
+        <li>Only a selection of data is shown in the graph (use a customized treemap.py script to sample data with ratio of 0.2, 250 colleges are shown. please look into <a href="data/treemap.py">/data/treemap.py</a></li>
+        <li>Click on map to zoom, click again to unzoom</li>
+        <li>Colleges in the same states are grouped together, area of the size means the num of falculty at the school</li>
+    </ol>
+    <p>© 2014 Megan Lee. meganleesf@gmail.com All rights reserved.</p>
+</body>
+</html>
